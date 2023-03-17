@@ -149,6 +149,7 @@ nav a {
 nav a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
+    transition: 0.3s;
 }
 
 
@@ -214,6 +215,7 @@ form {
 
 
 
+
 .searchButton input {
     border-radius: 0px 15px 15px 0px;
     border: none;
@@ -271,6 +273,7 @@ form {
 
 .filterChoice:hover {
     background-color: #DEEBFF;
+    transition: 0.3s;
 }
 
 
