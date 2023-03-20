@@ -418,10 +418,35 @@ form {
     font-weight: 700;
 }
 
+/* FOOTER */
 
+footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    background-color: #F2F2F2;
+}
 
+.piedPage {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-right: 180px;
+}
 
+.piedPage a {
+    text-decoration: none;
+    color: #000000;
+}
 
+footer ul {
+    list-style-type: none;
+    
+}
+
+footer h3 {
+    padding-left: 40px; /* Pour aligner le h3 et ul*/
+}
 
 
 
