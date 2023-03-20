@@ -277,6 +277,7 @@ form {
     margin-top: 33px;
     width: 30%; /* width me permet d'avoir une bonne proportion dans le background gris grace à wrap/direction et between */
     /* height: 30%; Pas vu de diff en ajoutant le height*/
+    height: 207.25px;
 }
 
 
@@ -445,20 +446,6 @@ footer {
 .liens div {
     padding-bottom: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
