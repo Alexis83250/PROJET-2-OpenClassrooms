@@ -18,6 +18,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin-top: 0px;
+    margin-bottom: 0px;
     
 }
 
@@ -338,7 +339,7 @@ form {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 33px; 
 }
 
 .populaires-cards img {
@@ -425,13 +426,15 @@ footer {
     flex-direction: row;
     margin-top: 60px;
     background-color: #F2F2F2;
+    height: 163px;
+
 }
 
 .piedPage {
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
-    margin-right: 180px;
+    margin-left: 20px;
+    width: 33.33%;
 }
 
 .piedPage a {
@@ -439,14 +442,11 @@ footer {
     color: #000000;
 }
 
-footer ul {
-    list-style-type: none;
-    
+.liens div {
+    padding-bottom: 15px;
 }
 
-footer h3 {
-    padding-left: 40px; /* Pour aligner le h3 et ul*/
-}
+
 
 
 
