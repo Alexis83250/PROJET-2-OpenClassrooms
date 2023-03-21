@@ -168,6 +168,7 @@ form {
 }
 
 
+
 /*---------------------------------------------*/
 /*FILTRE*/
 
@@ -184,11 +185,9 @@ form {
     font-size: 18px;
 }
 
-
 .filterCategory {
     display: flex;
     flex-direction: row;
-    
 }
 
 .filterChoice {
@@ -456,8 +455,36 @@ footer {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+/* LARGE DESKTOP*/
+
+@media (min-width: 1440px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
+}
+/*Pour les large desktop avoir comme sur figma le site en plein milieu*/
+
+
+
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    /*FILTER */
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filterTitle {
+        margin-bottom: 10px;
+    }
+
+    /* HEBERGEMENTS */
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -488,10 +515,121 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+/* regler les dimensions des activity cards*/
+    .activites-cards {
+        height: 270px;
+    }
+
+    .activites-cards h3 {
+        white-space :normal;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .activites-cards img {
+        width: 100%;
+        height: 72%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        
+    }
+
+    .activites-cards .card-title {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    
+    
 }
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .main-container {
+        width: 100%;
+        padding: 0px; 
+    }
+
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; 
+    }
+    
+
+     .logo-booki {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-anchor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        text-decoration: none;
+        color: #000000;
+        font-size: 16px;
+  
+    }
+
+    .nav-anchor a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #F2F2F2;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    nav a:hover {
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+        color: #0065FC;
+    }
+
+    /*RECHERCHE ET FILTRE */
+
+    .searchAndFilter {
+        margin: 0 20px 0 20px;
+    }
+
+    .searchButton {
+        display: none;
+    }
+
+    .searchButton2 input {
+        display:;
+        border-radius: 15px;
+        border: none;
+        background-color: #0065FC;
+        cursor:pointer;
+        width: 49px;
+        height: 49px;
+        font-size: 18px;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+
+    #searchBar #recherche {
+        border-right: none;
+
+    } 
+
+}
+
+
+@media (min-width: 767.98px) {
+    .searchButton2 {
+        display: none;
+    }
 }
 
