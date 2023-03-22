@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/7b1276326d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/7b1276326d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <form action="" method="post">
+                                <form action="#" method="post">
                                     <div>
                                         <label for="recherche"></label>
                                         <input type="search" name="recherche" id="recherche" placeholder="Marseille, France">
@@ -47,6 +47,7 @@
                                     <div class="searchButton">
                                         <input type="submit" value= "Rechercher">
                                     </div>
+                                    <!--Bouton qui apparait en mode mobile-->
                                     <div class="searchButton2">
                                         <input type="submit" value= "">
                                     </div>
@@ -60,37 +61,44 @@
                         </div>
                     </div>
                     <div class="filterCategory">
-                        <div class="filterChoice">
-                            <div>
-                                <i class="fa-solid fa-money-bill-wave"></i>
+                        <div class="filter1">
+                            <div class="filterChoice">
+                                <div>
+                                    <i class="fa-solid fa-money-bill-wave"></i>
+                                </div>
+                                <div>
+                                    <p>Économique</p>
+                                </div>
                             </div>
-                            <div>
-                                <p>Économique</p>
-                            </div>
-                        </div>
-                        <div class="filterChoice">
-                            <div>
-                                <i class="fa-solid fa-person"></i>
-                            </div>
-                            <div><p>Familial</p>
-                            </div>
-                        </div>
-                        <div class="filterChoice">
-                            <div>
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                            <div>
-                                <p>Romantique</p>
+                            <div class="filterChoice">
+                                <div>
+                                    <i class="fa-solid fa-person"></i>
+                                </div>
+                                <div>
+                                    <p>Familial</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="filterChoice">
-                            <div>
-                                <i class="fa-solid fa-fire"></i>
+                        <div class="filter2">
+                            <div class="filterChoice">
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div>
+                                    <p>Romantique</p>
+                                </div>
                             </div>
-                            <div><p>Nos pépites</p></div>
+                            <div class="filterChoice">
+                                <div>
+                                    <i class="fa-solid fa-fire"></i>
+                                </div>
+                                <div>
+                                    <p>Nos pépites</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div>    
                 <div class="infoBar">
                     <div>
                         <i class="fa-solid fa-info"></i>
@@ -343,6 +351,7 @@
                             <div><a href="#">Centre d'aide</a></div>
                             <div><a href="#">Nous contacter</a></div>
                     </div>
+            </div>
         </footer>
     </div>
 </body>

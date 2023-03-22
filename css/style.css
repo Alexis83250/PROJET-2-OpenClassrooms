@@ -183,7 +183,7 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -195,6 +195,19 @@ form {
 .filterCategory {
     display: flex;
     flex-direction: row;
+    gap: 10px;
+}
+
+.filter1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.filter2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .filterChoice {
@@ -604,13 +617,12 @@ footer {
 
     /*RECHERCHE ET FILTRE */
 
-
     .searchAndFilter {
         margin: 0 20px 0 20px;
     }
 
     #searchBar #recherche {
-        width: 245px;
+        width: 240px;
     }
 
 
@@ -648,11 +660,15 @@ footer {
         /*enleve la bordure à droite de la barre de recherche*/
     } 
 
-    /* FILTRE*/
-
-    .filter {
+    .filterCategory {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .filterChoice {
+        width: 100%;
+        height: 50px;
+        padding: 5px 15px;
     }
 
 }
