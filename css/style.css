@@ -183,7 +183,7 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -195,6 +195,19 @@ form {
 .filterCategory {
     display: flex;
     flex-direction: row;
+    gap: 10px;
+}
+
+.filter1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.filter2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .filterChoice {
@@ -556,16 +569,25 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    body {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
     .main-container {
         width: 100%;
-        padding: 0px; 
+        margin: 0;
+        padding: 0;
+        
     }
 
 
     header nav {
         display: flex;
         flex-direction: column;
-        gap: 15px; 
+        gap: 0px; 
     }
     
 
@@ -604,13 +626,13 @@ footer {
 
     /*RECHERCHE ET FILTRE */
 
-
     .searchAndFilter {
-        margin: 0 20px 0 20px;
+        margin: 0 10px 0 10px;
     }
 
     #searchBar #recherche {
-        width: 245px;
+        width: 140%;
+        position:static;
     }
 
 
@@ -629,7 +651,7 @@ footer {
         color: white;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
-        margin-left: -12px; /*Permet de se coller à la bordure pour s'aligner parfaitement */
+        margin-left: 42px; /*Permet de se coller à la bordure pour s'aligner parfaitement */
 
     }
 
@@ -640,7 +662,7 @@ footer {
         font-size: large;
         color: white;
         padding-top: 15px;
-        padding-left: 5px;
+        padding-left: 58px;
     }
 
     #searchBar #recherche {
@@ -648,12 +670,34 @@ footer {
         /*enleve la bordure à droite de la barre de recherche*/
     } 
 
-    /* FILTRE*/
-
-    .filter {
+    .filterCategory {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+
     }
+  
+    .filterChoice {
+        width:162.5px;
+        height: 50px;
+        padding: 5px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        border-radius: 50px;
+        border: 2px solid #d9d9d9;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 15px 5px;
+        margin-right: 0px;
+    }
+   
+
+    .filterChoice p {
+        font-size: 14px;
+    }
+
 
 }
 
