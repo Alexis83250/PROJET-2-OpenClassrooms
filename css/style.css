@@ -132,6 +132,7 @@ form {
     padding: 15px 18px 16px 18px;
     border: 0px solid #000000;
     font-size: larger;
+    height: 18px;
 }
 
 #searchBar #recherche {
@@ -151,7 +152,13 @@ form {
     color: #000000;
 }
 
+#searchBar #recherche:focus {
+    outline: none; /*retire les border au click*/
+}
 
+#searchBar #recherche:focus::placeholder {
+    opacity: 0.1;/*reduit l'opacité du placeholder au click*/
+}
 
 
 .searchButton input {
@@ -597,9 +604,15 @@ footer {
 
     /*RECHERCHE ET FILTRE */
 
+
     .searchAndFilter {
         margin: 0 20px 0 20px;
     }
+
+    #searchBar #recherche {
+        width: 245px;
+    }
+
 
     .searchButton {
         display: none;
@@ -616,14 +629,38 @@ footer {
         color: white;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
+        margin-left: -12px; /*Permet de se coller à la bordure pour s'aligner parfaitement */
+
+    }
+
+    .searchButton2::before {
+        font: var(--fa-font-solid); /*Permet d'ajouter l'icone avec font et content en mode mobile*/
+        content: "\f002";
+        position: absolute;
+        font-size: large;
+        color: white;
+        padding-top: 15px;
+        padding-left: 5px;
     }
 
     #searchBar #recherche {
         border-right: none;
-
+        /*enleve la bordure à droite de la barre de recherche*/
     } 
 
+    /* FILTRE*/
+
+    .filter {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
+
+
+
+
+
 
 
 @media (min-width: 767.98px) {
