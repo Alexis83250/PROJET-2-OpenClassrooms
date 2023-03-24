@@ -450,7 +450,7 @@ form {
 
 /* FOOTER */
 
-footer {
+.footer {
     display: flex;
     flex-direction: row;
     margin-top: 60px;
@@ -585,6 +585,7 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    
     body {
         width: 100%;
     }
@@ -654,6 +655,10 @@ footer {
     }
 
 
+    #searchBar {
+        padding-left: 10px;
+    }
+
     #searchBar #recherche {
         width: 100%;
         position:static;
@@ -675,7 +680,7 @@ footer {
         color: white;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
-        margin-left: 0px; /*Permet de se coller à la bordure pour s'aligner parfaitement */
+        margin-left: -15px; /*Permet de se coller à la bordure pour s'aligner parfaitement */
 
     }
 
@@ -686,7 +691,6 @@ footer {
         font-size: large;
         color: white;
         padding-top: 15px;
-        padding-left: 106px;
     }
 
     #searchBar #recherche {
@@ -780,5 +784,39 @@ footer {
         padding-bottom: 5px;
     }
 
+    /*ACTIVITES*/
 
+    .activites {
+        margin-bottom: 700px;
+        
+    }
+
+    .activites-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activites-cards .card {
+        width: 90%;
+        height: 70%;
+    }
+
+    /*FOOTER*/
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+    }
+    
+
+
+}
+
+/*CACHER LE DEUXIEME BOUTON*/
+@media (min-width: 767.98px) {
+    .searchButton2 {
+        display: none;
+    }
 }
