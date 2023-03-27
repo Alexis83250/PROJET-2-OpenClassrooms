@@ -404,7 +404,7 @@ form {
     flex-direction: column;
     margin-top: 20px;
     width: 23%; 
-    padding: 0; /* enlever la marge de la bordure dû à la ligne 39 CSS*/
+    padding: 0; /* enlever la marge de la bordure */
 }
 
 
