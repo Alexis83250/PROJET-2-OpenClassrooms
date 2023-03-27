@@ -256,6 +256,11 @@ form {
 
 
 /****** Hebergements And Populaires ***********/
+
+.card:hover {
+    cursor: pointer;
+}
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
