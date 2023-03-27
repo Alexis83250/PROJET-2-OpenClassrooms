@@ -453,9 +453,9 @@ form {
 .footer {
     display: flex;
     flex-direction: row;
-    margin-top: 60px;
     background-color: #F2F2F2;
-    height: 163px;
+    height: auto;
+    margin-top: 50px;
 
 
 }
@@ -787,7 +787,7 @@ form {
     /*ACTIVITES*/
 
     .activites {
-        margin-bottom: 700px;
+        margin-bottom: 630px;
         
     }
 
