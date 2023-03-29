@@ -319,16 +319,17 @@ form {
 }
 
 .hebergements-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-bottom: 7px;
 }
 
 .hebergements-cards .card-subtitle {
     margin: 0;
+    padding-bottom: 3px;
 }
 
 .hebergements-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 .hebergements-cards h3 {
@@ -429,7 +430,8 @@ form {
 .activites-cards .card-title {
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 15px;
+    margin-top: 12px;
     white-space : nowrap;
     font-size: 16px;
     font-weight: 700;
@@ -573,9 +575,10 @@ form {
 
     .activites-cards .card-title {
         display: flex;
-        margin-top: 10px;
+        align-items: center;
+        margin-top: 9px;
         white-space:normal;
-        padding-left: 20px;
+        padding-left: 15px;
     }
 }
 
@@ -765,7 +768,7 @@ form {
 
     .hebergements-cards .card {
         width: 100%;
-        height: 240px;
+        height: 230px;
     }
 
     .hebergements-cards img {
@@ -778,6 +781,26 @@ form {
 
     .hebergements-cards .card-subtitle {
         padding-bottom: 5px;
+    }
+
+    .hebergements-cards #un {
+        order: 1;
+    }
+
+    .hebergements-cards #deux {
+        order: 6;
+    }
+    .hebergements-cards #trois {
+        order: 3;
+    }
+    .hebergements-cards #quatre {
+        order: 4;
+    }
+    .hebergements-cards #cinq {
+        order: 2;
+    }
+    .hebergements-cards #six {
+        order: 5;
     }
 
     /*ACTIVITES*/
@@ -821,5 +844,7 @@ form {
         display: none;
     }
 }
+
+/**/
 
 /*PROJET 2 FINI*/
