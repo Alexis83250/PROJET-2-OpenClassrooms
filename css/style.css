@@ -727,7 +727,7 @@ form {
         content: "\f002";
         position: absolute;
         font-size: large;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
